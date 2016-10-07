@@ -1,0 +1,29 @@
+{
+  "name": "Kibana",
+  "description": "Build analytics and data visualization dashboards for Elasticsearch with Kibana 4.",
+  "keywords": [
+    "kibana", "time-series", "metrics", "analytics", "dataviz", "visualization",
+    "elasticsearch", "elastic"
+  ],
+  "website": "https://elastic.co/",
+  "repository": "https://github.com/Scalingo/kibana-scalingo",
+  "logo": "https://cdn.rawgit.com/Scalingo/kibana-scalingo/master/kibana.svg",
+  "success_url": "/",
+  "env": {
+    "ELASTICSEARCH_URL": {
+      "description": "URL to the Elasticsearch cluster you want to use with Kibana",
+      "value": "",
+      "required": true
+    },
+    "BUILDPACK_URL": {
+      "description": "Buildpack to use to deploy kibana",
+      "value": "https://github.com/Scalingo/kibana-buildpack",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/omc/heroku-buildpack-kibana"
+    }
+  ]
+}
