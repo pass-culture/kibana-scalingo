@@ -15,9 +15,24 @@
       "value": "",
       "required": true
     },
+    "ELASTICSEARCH_TLS_CA_URL": {
+      "description": "If Elasticsearch is using HTTPS with self-signed certificate, URL to this one",
+      "value": "https://db-api.scalingo.com/api/ca_certificate",
+      "required": false
+    },
     "BUILDPACK_URL": {
       "description": "Buildpack to use to deploy kibana",
       "value": "https://github.com/Scalingo/kibana-buildpack",
+      "required": true
+    },
+    "KIBANA_USER": {
+      "description": "Username for Kibana authentication",
+      "value": "kibana-user",
+      "required": true
+    },
+    "KIBANA_PASSWORD": {
+      "description": "Password for Kibana authentication",
+      "value": "kibana-password",
       "required": true
     }
   },
