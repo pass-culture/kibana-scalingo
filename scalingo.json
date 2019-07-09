@@ -20,6 +20,11 @@
       "value": "https://db-api.scalingo.com/api/ca_certificate",
       "required": false
     },
+    "ES_SSL_VERIFICATION_MODE": {
+      "description": "If you're using a custom hostname not handled by the TLS certificate, set to 'none'",
+      "value": "",
+      "required": false
+    },
     "BUILDPACK_URL": {
       "description": "Buildpack to use to deploy kibana",
       "value": "https://github.com/Scalingo/kibana-buildpack",
@@ -35,10 +40,5 @@
       "value": "kibana-password",
       "required": true
     }
-  },
-  "buildpacks": [
-    {
-      "url": "https://github.com/omc/heroku-buildpack-kibana"
-    }
-  ]
+  }
 }
