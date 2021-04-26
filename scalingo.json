@@ -17,7 +17,7 @@
     },
     "ELASTICSEARCH_TLS_CA_URL": {
       "description": "If Elasticsearch is using HTTPS with self-signed certificate, URL to this one",
-      "value": "https://db-api.scalingo.com/api/ca_certificate",
+      "value": "https://db-api.osc-fr1.scalingo.com/api/ca_certificate",
       "required": false
     },
     "ES_SSL_VERIFICATION_MODE": {
